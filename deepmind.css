@@ -731,11 +731,39 @@ form::after {
     justify-content: flex-start;
     align-items: flex-start;
   }
+
   .exp-section,
   .news-boxs {
+    width: 100%;
     flex-wrap: wrap;
   }
+
+  .news-boxs,
+  .card2-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
   .exp-section .adj-exp-txt {
     max-width: 100%;
+  }
+
+  .exp-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 4rem;
+  }
+
+  .exp-box-section,
+  .box-exp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 1rem;
   }
 }
